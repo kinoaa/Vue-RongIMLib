@@ -109,13 +109,13 @@ export default {
     linkToRongs(token) {
       const that = this
       // 初始化融云
-      // 测试服 key:k51hidwqkclyb
-      // 正式服 key:tdrvipkstxfb5
+      // 测试服 key:
+      // 正式服 key:
       let RongClientKey
-      if (process.env.VUE_APP_BASE_API2 === 'http://test.manage.faceying.com') {
-        RongClientKey = 'k51hidwqkclyb'
-      } else {
-        RongClientKey = 'tdrvipkstxfb5'
+      if (process.env.VUE_APP_BASE_API2 === '') {//测试服
+        RongClientKey = ''
+      } else {//正式服
+        RongClientKey = ''
       }
       // 应用初始化以获取 RongIMLib 实例对象，请务必保证此过程只被执行一次
       // eslint-disable-next-line no-undef
